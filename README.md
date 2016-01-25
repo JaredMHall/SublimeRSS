@@ -1,5 +1,5 @@
 #SublimeRSS
- Welcome to Sublime RSS! An RSS reader for Sublime! I created this because I really enjoy this feature in Emacs and found it to be non-existant in Sublime Text. Hope someone enjoys it as much as me!
+ Welcome to SublimeRSS! An RSS reader for Sublime! I created this because I really enjoy this feature in Emacs and found it to be non-existant in Sublime Text. Hope someone enjoys it as much as me!
 
 ##Dependencies:
 This package requires the 'Clickable URLS' package. Get it through the package manager or from https://github.com/leonid-shevtsov/ClickableUrls_SublimeText
