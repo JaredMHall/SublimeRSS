@@ -63,4 +63,4 @@ class EditFeedsCommand(sublime_plugin.TextCommand):
         self.openFeedList()
 
     def openFeedList(self):
-        self.window.open_file(os.path.abspath(os.path.dirname(__file__)) + "/feedlist.txt",)
+        self.window.open_file(os.path.abspath(os.path.dirname(__file__)) + "/feedlist.txt")
