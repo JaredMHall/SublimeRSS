@@ -1,0 +1,4 @@
+[
+   {"caption" : "SublimeRSS: Run", "command" : "rss"},
+   {"caption" : "SublimeRSS: Edit Feeds", "command" : "edit_feeds"},
+]
