@@ -19,10 +19,8 @@ class RssCommand(sublime_plugin.TextCommand):
 
     def getFeed(self,edit):
         window = sublime.active_window()
-        loop_status_msg("-\\/", 0.2)
         entries = {}
         feed = self.parseFeedList()
-        sublime.status_message(str(feed))
         posts = []
 
         for x, link in enumerate(feed):
@@ -66,4 +64,5 @@ class EditFeedsCommand(sublime_plugin.TextCommand):
         self.openFeedList()
 
     def openFeedList(self):
-        self.window.open_file("feedlist.txt")
+        folderPath = sublime.packages_path()
+        self.window.open_file(folderPath + "/SublimeRSS/" + "feedlist.txt")
