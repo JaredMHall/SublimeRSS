@@ -24,7 +24,7 @@ http://www.reddit.com/r/funny/.rss
 ```
 [
 	{ 
-		"keys": ["ctrl+;"], 
+		"keys": ["alt+;"], 
 		"command": "open_url_under_cursor" 
 	}
 ]
