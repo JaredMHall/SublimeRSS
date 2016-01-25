@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>srss</string>
+	</array>
+	<key>name</key>
+	<string>SublimeRSS File</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Web adresses</string>
+			<key>match</key>
+			<string>^http(.*)</string>
+			<key>name</key>
+			<string>comment.line.percentage.srss</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Link Names</string>
+			<key>match</key>
+			<string>\#+(.*)</string>
+			<key>name</key>
+			<string>variable.parameter.srss</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.srss</string>
+	<key>uuid</key>
+	<string>fde72381-136a-4322-9be7-19a86716d5fe</string>
+</dict>
+</plist>
