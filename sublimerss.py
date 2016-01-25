@@ -1,10 +1,12 @@
 import sys, os
+import fnmatch
 sys.path.append(os.path.abspath(os.path.dirname(__file__))+"/feedparser")
 import sublime, sublime_plugin
 import feedparser 
 import datetime
 
 class RssCommand(sublime_plugin.TextCommand):
+
     def run(self, edit):
         self.getFeed(edit)
 
@@ -56,11 +58,20 @@ class RssCommand(sublime_plugin.TextCommand):
         newFile.insert(edit, 0, asciiLogo)
 
 
-class EditFeedsCommand(sublime_plugin.TextCommand):
+class EditFeedsCommand(sublime_plugin.WindowCommand):
     window = sublime.active_window()
+    global pluginDir
 
-    def run(self, edit):
+    def run(self):
         self.openFeedList()
 
     def openFeedList(self):
-        self.window.open_file(os.path.abspath(os.path.dirname(__file__)) + "/feedlist.txt")
+        packagePath = sublime.packages_path()
+
+        matches = []
+        #self.window.open_file("/feedlist.txt")
+        for root, dirnames, filenames in os.walk(packagePath):
+            for filename in fnmatch.filter(filenames, "sublimerss.py"):
+                matches.append(root)
+               
+        self.window.open_file(matches[0] + "/feedlist.txt")
