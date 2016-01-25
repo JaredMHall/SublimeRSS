@@ -9,9 +9,8 @@ class RssCommand(sublime_plugin.TextCommand):
         self.getFeed(edit)
 
     def parseFeedList(self):
-        folderPath = sublime.packages_path()
         feedList = []
-        filestream = open(folderPath + "/SublimeRSS/" + "feedlist.txt", "r")
+        filestream = open(os.path.abspath(os.path.dirname(__file__)) + "/feedlist.txt", "r")
         feedList = filestream.read().split(',') 
         feedList = (j.strip(' ') for j in feedList)
         feedList = (j.strip('\n') for j in feedList)
@@ -64,5 +63,4 @@ class EditFeedsCommand(sublime_plugin.TextCommand):
         self.openFeedList()
 
     def openFeedList(self):
-        folderPath = sublime.packages_path()
-        self.window.open_file(folderPath + "/SublimeRSS/" + "feedlist.txt")
+        self.window.open_file(os.path.abspath(os.path.dirname(__file__)) + "/feedlist.txt",)
