@@ -36,12 +36,12 @@ This will allow you, if your cursor is over the link, to open it by pressing `AL
  [
 	{ 
 		"button": "button1", 
-		"modifiers": ["option"], 
+		"modifiers": ["ctrl"], 
 		"press_command": "open_url_under_cursor" 
 	}
 ]
 ```
-Additionally, this will allow you to open URLs by holding ALT (or Option) and left clicking the link which by default is not actually possible. (This hotkey binding came from user 'thespacedoctors' useful comment [here](https://github.com/leonid-shevtsov/ClickableUrls_SublimeText/issues/2))
+Additionally, this will allow you to open URLs by holding CTRL and left clicking the link which by default is not actually possible. (This hotkey binding came from user 'thespacedoctors' useful comment [here](https://github.com/leonid-shevtsov/ClickableUrls_SublimeText/issues/2))
 
 ##Donate
 
