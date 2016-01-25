@@ -31,7 +31,7 @@ class RssCommand(sublime_plugin.TextCommand):
         now = datetime.datetime.now()
         newFile = window.new_file()
         newFile.set_name("SRSSfeeds.srss")
-        newFile.set_syntax_file("Packages/SublimeRSS/SublimeRSS.tmLanguage")
+        newFile.set_syntax_file("Packages/" + os.path.basename(os.path.dirname(__file__)) + "/SublimeRSS.tmLanguage")
         newFile.set_scratch(True)
 
         for x, entry in enumerate(posts):
