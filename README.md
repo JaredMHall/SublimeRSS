@@ -29,7 +29,7 @@ http://www.reddit.com/r/funny/.rss
 	}
 ]
 ```
- This will allow you, if your cursor is over the link, to open it by pressing `CTRL+;` which is easier than the default binding of `CTRL+ALT+ENTER`
+This will allow you, if your cursor is over the link, to open it by pressing `ALT+;` which for me is easier than the default binding of `CTRL+ALT+ENTER`
 
  And this to `Preferences>Package Settings>Clickable URLs>Mouse Bindings - User`
  ```
