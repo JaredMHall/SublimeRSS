@@ -2,17 +2,14 @@ SublimeRSS
 ==========
  Welcome to SublimeRSS! An RSS reader for Sublime! I created this because I really enjoy this feature in Emacs and found it to be non-existant in Sublime Text. Hope someone enjoys it as much as me!
 
-Dependencies
-============
+## Dependencies
 This package requires the 'Clickable URLS' package. Get it through the package manager or from https://github.com/leonid-shevtsov/ClickableUrls_SublimeText
 
-Supported Systems
-=================
+## Supported Systems
 Seems to be working on everything so far.
 Tested on Windows 10, Linux Mint 17, and Mac OSX 10.9.5 
 
-How-To
-======
+## How-To
 First of all, make sure to add your own RSS feeds seperated by a comma. For example:
 http://www.techcrunch.com/feed/,
 http://rss.slashdot.org/Slashdot/slashdot,
